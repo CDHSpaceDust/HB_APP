@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>과제입니다</title>
+
+    <style media="screen">
+    h2{text-align: center;}
+      .main{text-align: center;}
+    </style>
+
+    <script type="text/javascript">
+    var img_num = 1;
+
+    function moveN() {
+      if(img_num >= 0){
+        img_num ++;
+        document.getElementById("img_O").src = "cal" + img_num.toString() + ".png";
+      }
+    }
+    function moveB() {
+      if(img_num <= 6){
+        img_num --;
+        document.getElementById("img_O").src = "cal" + img_num.toString() + ".png";
+      }
+    }
+    </script>
+
+
+  </head>
+
+  <body>
+    <h2>삐로롱 뿅뾰</h2>
+    <div class="main">
+      <div class="button">
+        <button type="button" name="Lbutton" onclick="moveB()">before</button>
+        <button type="button" name="Rbutton" onclick="moveN()">Next</button>
+      </div>
+      <br>
+      <div class="pic">
+        <img id="img_O"  src="cal1.png" alt="red.png">
+      </div>
+    </div>
+  </body>
+
+</html>
