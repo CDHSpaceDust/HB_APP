@@ -12,18 +12,17 @@
 
     <script type="text/javascript">
     var img_num = 1;
-
-    function moveN() {
-      if(img_num >= 0){
-        img_num ++;
-        document.getElementById("img_O").src = "cal" + img_num.toString() + ".png";
-      }
+    function moveB(){
+        img_num--;
+        if(img_num <= 0)
+            img_num++;
+        document.getElementById("img_O").src="cal"+img_num.toString()+".png";
     }
-    function moveB() {
-      if(img_num <= 6){
-        img_num --;
-        document.getElementById("img_O").src = "cal" + img_num.toString() + ".png";
-      }
+    function moveN(){
+        img_num++;
+        if(img_num >= 6)
+            img_num--;
+        document.getElementById("img_O").src="cal"+img_num.toString()+".png";
     }
     </script>
 
