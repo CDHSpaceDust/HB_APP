@@ -1,30 +1,43 @@
-
-<html lang="ko">
+<!-- https://v3-docs.vuejs-korea.org/  -->
+<html lang="en">
 <head>
-    <title>Document</title>
+    <title>Component 실습</title>
 </head>
 <body>
     <script src="https://unpkg.com/vue@3"></script>
+    <!-- vue프레임웍을 사용한 예시-->
     <div id="app">
-        <button @click="LoveCount++;">고백하기</button>
-        <p>{{boy}}가 {{girl}}에게 <b v-html=""></b>했다가 {{loveCount}}번 차였다</p>
+        <button @click="count++;">고백해보자</button>
+        <br>
+        <p>이은석님께선 {{ count }}번 차였습니다</p>
+    </div>
+
+    <div id="testApp">
+        <button @click="count++;">고백해보자</button>
+        <br>
+        <p>김준석님께선 <b v-html="style"></b>번 차였습니다</p>
     </div>
 
     <script>
         const {createApp} = Vue;
         createApp({
             data() {
-                return {
-                    boy: "A",
-                    girl: "B",
-                    loveCount: 0,
-                    Styel: "<span "
+                return {                    
+                    count : 0,
                 }
             },
             mounted(){
-                console.log("aaaaaaaaaaaaaaaa");
-            }
-        }).mount("app");
-    </script>
+                console.log("app 마운트 성공!");
+            },
+        }).mount("#app");
+
+        createApp({
+            data()      { return {  
+                                    style : "<span style='color: red'>1</span>" }  },
+            mounted()   { console.log("testApp 마운트 성공!"); },
+        }).mount("#testApp")
+
+        
+    </script>    
 </body>
 </html>

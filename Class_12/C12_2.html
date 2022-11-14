@@ -5,52 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1fr.0">
     <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
     <style>
         *{
             background-color: black;
             text-align: center;
         }
         #app{
-            width: 582px;
-            height: 582px;
-            background-color: rgb(140, 0, 255);
+            width: 600px;
+            height: 600px;
+            background-color: blueviolet;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
             padding: 10px;
         }
-        .box{
-            background-color: rgb(0, 255, 200);
-
+        .blocks{
+            background-color: aquamarine;
         }
-        .box1{
-           background-color: rgb(255, 0, 180);
-
+        .blocks1{
+            background-color: magenta;
         }
+
     </style>
 </head>
 <body>
     <div id="app">
-        <div class="box">O</div>
-        <div class="box1">X</div>
-        <div class="box">O</div>
-        <div class="box1">X</div>
-
-        <div class="box1">X</div>
-        <div class="box">O</div>
-        <div class="box1">X</div>
-        <div class="box">O</div>
-
-        <div class="box">O</div>
-        <div class="box1">X</div>
-        <div class="box">O</div>
-        <div class="box1">X</div>
-
-        <div class="box1">X</div>
-        <div class="box">O</div>
-        <div class="box1">X</div>
-        <div class="box">O</div>
+        <div class="blocks" v-for="index in blocks">A</div>
+        <div class="blocks1" v-for="index in blocks1">B</div>
     </div>
+
+    <script>
+        var {createApp} = Vue;
+        createApp({
+            data() {
+                return{
+                    blocks : 8,
+                    blocks1 : 8,
+                }
+            },
+            mounted(){
+                console.log("app 마운트");
+            },
+        }).mount("#app");
+    </script>
 </body>
 </html>
