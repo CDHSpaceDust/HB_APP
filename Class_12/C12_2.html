@@ -24,7 +24,13 @@
         .blocks{
             background-color: aquamarine;
         }
-        .blocks1{
+        .in{
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            width: 120px;
+            height: 120px;
+            text-align: center;
             background-color: magenta;
         }
 
@@ -33,7 +39,7 @@
 <body>
     <div id="app">
         <div class="blocks" v-for="index in blocks">A</div>
-        <div class="blocks1" v-for="index in blocks1">B</div>
+        <div class="in">B</div>
     </div>
 
     <script>
@@ -41,8 +47,7 @@
         createApp({
             data() {
                 return{
-                    blocks : 8,
-                    blocks1 : 8,
+                    blocks : 16,
                 }
             },
             mounted(){
