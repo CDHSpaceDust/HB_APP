@@ -1,0 +1,27 @@
+        *{
+            background-color: black;
+            text-align: center;
+        }
+        #app{
+            width: 600px;
+            height: 600px;
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .blocks{
+            background-color: aquamarine;
+            text-align: center;
+        }
+        .in{
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            background-color: magenta;
+        }
