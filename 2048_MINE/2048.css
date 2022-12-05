@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -29,12 +29,12 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 /* colored tiles */
 
-.x2 {
+/* .x2 {
     background-color: #eee4da;
     color: #727371;
 }
@@ -97,4 +97,38 @@ hr {
 .x8192 {
     background-color: #ff2020;
     color: white;
+} */
+
+#app{
+    position: relative;
+    width: 590px;
+    height: 590px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding : 10px;     
+    border-radius: 20;      
+}
+.backblock{            
+    background-color: burlywood;
+    text-align: center;   
+    line-height: 1.8;
+    font-size: 70;
+    font-family: cursive;
+    border-radius: 20;
+}
+.blockPrefab{
+    position: absolute;
+    left: 20;
+    top: 20;
+    width: 120;
+    height: 120;
+    background-color: brown;
+    text-align: center;            
+    line-height: 1.6;
+    font-size: 70;
+    font-family: cursive;
+    border-radius: 20;
 }
