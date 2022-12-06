@@ -1,8 +1,17 @@
-/* body {
+body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-image: url(wave.jpg);
 }
-
+h1{
+    color: white;
+}
+h2 {
+    color: white;
+}
+span {
+    color: #0300ad;
+}
 hr {
     width: 500px;
 }
@@ -11,8 +20,8 @@ hr {
     width: 400px;
     height: 400px;
 
-    background-color: #cdc1b5;
-    border: 6px solid #bbada0;
+    background : linear-gradient(#aad0fc,#f7e2ff);
+    border: 6px solid #000000;
 
     margin: 0 auto;
     display: flex;
@@ -22,84 +31,84 @@ hr {
 .tile {
     width: 90px;
     height: 90px;
-    border: 5px solid #bbada0;
+    border: 5px solid #190074;
 
     font-size: 40px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+} 
 
 
 /* colored tiles */
 
-/* .x2 {
-    background-color: #eee4da;
-    color: #727371;
+ .x2 {
+    background: linear-gradient(#d8fcff,#a1d8ff);
+    color: #ffffff;
 }
 
 .x4 {
-    background-color: #ece0ca;
-    color: #727371;
+    background: linear-gradient(#c8e8fc,#eaabfd);
+    color: #ffffff;
 }
 
 .x8 {
-    background-color: #f4b17a;
+    background: linear-gradient(#a4f5f5,#f398e7);
     color: white;
 }
 
 .x16{
-    background-color: #f59575;
+    background: linear-gradient(#94cbff,#ac6fd4);
     color: white;
 }
 
 .x32{
-    background-color: #f57c5f;
+    background: linear-gradient(#66a8ff,#d454e0);
     color: white;
 }
 
 .x64{
-    background-color: #f65d3b;
+    background: linear-gradient(#4ca4df,#8838c9);
     color: white;
 }
 
 .x128{
-    background-color: #edce71;
+    background: linear-gradient(#1a67cc,#a812a1);
     color: white;
 }
 
 .x256{
-    background-color: #edcc63;
+    background: linear-gradient(#a45ef3,#53e2b2);
     color: white;
 }
 
 .x512{
-    background-color: #edc651;
+    background: linear-gradient(#028dff,#1bfab0);
     color: white;
 }
 
 .x1024{
-    background-color: #eec744;
+    background: linear-gradient(#3843da,#68eeee);
     color: white;
 }
 
 .x2048{
-    background-color: #ecc230;
+    background: linear-gradient(#4109a8,#418ce2);
     color: white;
 }
 
 .x4096 {
-    background-color: #fe3d3d;
+    background: linear-gradient(#066aa3,#7afcd1);
     color: white;
 }
 
 .x8192 {
-    background-color: #ff2020;
+    background: linear-gradient(#2102aa,#a2ffe0);
     color: white;
-} */
+}
 
-#app{
+/* #app{ 
     position: relative;
     width: 590px;
     height: 590px;
@@ -131,4 +140,4 @@ hr {
     font-size: 70;
     font-family: cursive;
     border-radius: 20;
-}
+} */
