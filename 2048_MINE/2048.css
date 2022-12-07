@@ -11,6 +11,7 @@ h2 {
     color: white;
 }
 p {
+    display: inline-block;
     color: #0300ad;
 }
 hr {
